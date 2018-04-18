@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>My first AngularJS application in ServiceNow</description>
+        <direct>false</direct>
+        <endpoint>x_203882_angular_a_angular_app.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+<script src="x_203882_angular_a.angular_app_client_lo.jsdbx"></script>
+	<div ng-app="angularapp" ng-controller="AngularAppCtrl">
+		<input type="text" ng-model="myVar" placeholder="Please enter the text"></input>
+		<p></p>
+		<div class="jumbotron">
+			<h1 class="display-3">Hello World!</h1>
+			<hr class="m-y-2"/>
+		<p>{{myVar}}</p>
+			<p>{{currentURL}}</p>
+			<p>{{currentUser}}</p>
+			<p>{{currentTime | date:'yyyy-MM-dd HH:mm:ss'}}</p>
+			<button ng-click="clearTxt()" type="btn btn-primary">Clear Text</button>
+		</div>
+	</div>
+</j:jelly>]]></html>
+        <name>angular_app</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-16 03:23:42</sys_created_on>
+        <sys_id>5c7661b44f211300e7f701bda310c7b8</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>angular_app</sys_name>
+        <sys_package display_value="Angular APP" source="x_203882_angular_a">5736adb04f211300e7f701bda310c788</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Angular APP">5736adb04f211300e7f701bda310c788</sys_scope>
+        <sys_update_name>sys_ui_page_5c7661b44f211300e7f701bda310c7b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-17 08:51:53</sys_updated_on>
+    </sys_ui_page>
+</record_update>
